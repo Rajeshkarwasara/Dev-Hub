@@ -207,6 +207,32 @@ h1, h2, h3, h4, .brand-font {
   box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
 
+.featured-project {
+  border: 1px solid rgba(236, 72, 153, 0.4);
+  box-shadow: 0 0 30px rgba(15, 23, 42, 0.4);
+  background: linear-gradient(145deg, rgba(15, 23, 42, 0.7), rgba(30, 41, 59, 0.4));
+  overflow: hidden;
+  height: auto;
+}
+
+.featured-project:hover {
+  border-color: rgba(236, 72, 153, 0.8);
+  box-shadow: 0 10px 50px rgba(236, 72, 153, 0.15);
+}
+
+.featured-project .project-img-wrapper {
+  height: 100%;
+  aspect-ratio: auto;
+  border-radius: 20px 0 0 20px;
+}
+
+@media (max-width: 991px) {
+  .featured-project .project-img-wrapper {
+    height: 300px !important;
+    border-radius: 20px 20px 0 0 !important;
+  }
+}
+
 .project-img-wrapper {
   position: relative;
   overflow: hidden;
