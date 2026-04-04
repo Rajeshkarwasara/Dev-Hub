@@ -253,8 +253,8 @@ h1, h2, h3, h4, .brand-font {
 .project-overlay {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: linear-gradient(to top, rgba(15, 23, 42, 0.9), transparent);
-  opacity: 0;
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.8), transparent);
+  opacity: 1;
   transition: opacity 0.3s ease;
   display: flex;
   align-items: flex-end;
@@ -580,6 +580,16 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .hero-section {
+    min-height: auto;
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+  
+  .hero-section .min-vh-100 {
+    min-height: auto !important;
+  }
+
   .hero-title {
     font-size: 2.2rem;
   }
